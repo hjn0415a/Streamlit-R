@@ -1,0 +1,5 @@
+**/__pycache__/
+gdpr_consent/node_modules/
+.nextflow/
+/users/
+/raw/
