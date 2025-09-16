@@ -15,22 +15,22 @@ if __name__ == '__main__':
              st.Page(Path("content", "rcode", "volcano_plot.py"), title="File Upload", icon="📁"),
         ],
         "Basic analysis": [
-             st.Page(Path("content", "rcode", "temp.py"), title="Heatmap", icon="🌡️"),
-             st.Page(Path("content", "rcode", "temp.py"), title="Volcano, Enhanced", icon="🌋"),
-             st.Page(Path("content", "rcode", "temp.py"), title="PCA", icon="📉"),
+             st.Page(Path("content", "rcode", "heatmap.py"), title="Heatmap", icon="🌡️"),
+             st.Page(Path("content", "rcode", "volcano.py"), title="Volcano, Enhanced", icon="🌋"),
+             st.Page(Path("content", "rcode", "pca.py"), title="PCA", icon="📉"),
         ],
         "GO Pathway analysis": [
-             st.Page(Path("content", "rcode", "temp.py"), title="Enrichplot", icon="📈"),
-             st.Page(Path("content", "rcode", "temp.py"), title="Cnetplot", icon="🕸️"),
-             st.Page(Path("content", "rcode", "temp.py"), title="Emapplot", icon="📊"),
-             st.Page(Path("content", "rcode", "temp.py"), title="Ridgeplot", icon="🕸️"),
-             st.Page(Path("content", "rcode", "temp.py"), title="Heatmaplike functional classification", icon="📋"),
+             st.Page(Path("content", "rcode", "enrichplot.py"), title="Enrichplot", icon="📈"),
+             st.Page(Path("content", "rcode", "cnetplot.py"), title="Cnetplot", icon="🕸️"),
+             st.Page(Path("content", "rcode", "emapplot.py"), title="Emapplot", icon="📊"),
+             st.Page(Path("content", "rcode", "ridgeplot.py"), title="Ridgeplot", icon="🕸️"),
+             st.Page(Path("content", "rcode", "pathway_gene.py"), title="Heatmaplike functional classification", icon="📋"),
         ],
         "Gene-gene Interaction": [
-             st.Page(Path("content", "rcode", "temp.py"), title="Enrichplot", icon="📈"),
+             st.Page(Path("content", "rcode", "string.py"), title="string", icon="📈"),
         ],
         "Enrichkegg": [
-             st.Page(Path("content", "rcode", "temp.py"), title="Pathview", icon="🔎"),
+             st.Page(Path("content", "rcode", "pathview.py"), title="Pathview", icon="🔎"),
         ]
     }
 
