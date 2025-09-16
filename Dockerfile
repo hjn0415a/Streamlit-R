@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Install R packages via Bioconductor
 RUN Rscript -e "if(!requireNamespace('BiocManager', quietly=TRUE)) install.packages('BiocManager', repos='https://cran.r-project.org')" && \
-    Rscript -e "BiocManager::install(c('EnhancedVolcano', 'clusterProfiler', 'org.Mm.eg.db', 'enrichplot', 'pheatmap'), update=TRUE, ask=FALSE, dependencies=TRUE)" && \
-    Rscript -e "install.packages(c('rpy2', 'svglite', 'ggplot2', 'readxl'), repos='https://cran.r-project.org')"
+    Rscript -e "BiocManager::install(c('EnhancedVolcano', 'clusterProfiler', 'org.Mm.eg.db', 'org.Hs.eg.db', 'enrichplot', 'pheatmap'), update=TRUE, ask=FALSE, dependencies=TRUE)" && \
+    Rscript -e "install.packages(c('rpy2', 'svglite', 'ggplot2', 'readxl', 'factoextra', 'ggrepel', 'readr'), repos='https://cran.r-project.org')"
 
 # Install Python dependencies
 COPY requirements.txt .
