@@ -12,7 +12,7 @@ if __name__ == '__main__':
     pages = {
         "FullseePathway": [
              st.Page(Path("content", "rcode", "quickstart.py"), title="User Guide", icon="📃"),
-             st.Page(Path("content", "rcode", "volcano_plot.py"), title="File Upload", icon="📁"),
+             st.Page(Path("content", "rcode", "file_upload.py"), title="File Upload", icon="📁"),
         ],
         "Basic analysis": [
              st.Page(Path("content", "rcode", "heatmap.py"), title="Heatmap", icon="🌡️"),
