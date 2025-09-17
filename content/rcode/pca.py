@@ -12,7 +12,7 @@ st.markdown("## PCA Plot (factoextra + ggrepel)")
 excel_path_pca = "/data/proteinGroups.xlsx"  # 컨테이너 안 경로
 output_svg_pca = "/data/PCA_plot6.svg"
 
-with tempfile.NamedTemporaryFile(mode="w", suffix=".R", delete=False) as tmp_r:
+with tempfile.NamedTemporaryFile(mode="w", suffix=".R", delete=False, encoding="utf-8") as tmp_r:
     r_script_path = tmp_r.name
     tmp_r.write(f"""
 library(readxl)

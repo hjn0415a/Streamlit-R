@@ -14,7 +14,7 @@ output_dir_go = "/data/go_results"
 figure_dir_go = os.path.join(output_dir_go, "figure")
 os.makedirs(figure_dir_go, exist_ok=True)
 
-with tempfile.NamedTemporaryFile(mode="w", suffix=".R", delete=False) as tmp_r:
+with tempfile.NamedTemporaryFile(mode="w", suffix=".R", delete=False, encoding="utf-8") as tmp_r:
     r_script_path = tmp_r.name
     tmp_r.write(f"""
 library(clusterProfiler)

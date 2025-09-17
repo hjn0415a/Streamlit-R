@@ -13,7 +13,7 @@ base_dir = "/data"
 figure_dir = os.path.join(base_dir, "figure")
 os.makedirs(figure_dir, exist_ok=True)
 
-with tempfile.NamedTemporaryFile(mode="w", suffix=".R", delete=False) as tmp_r:
+with tempfile.NamedTemporaryFile(mode="w", suffix=".R", delete=False, encoding="utf-8") as tmp_r:
     r_script_path = tmp_r.name
     tmp_r.write(f"""
     library(clusterProfiler)
