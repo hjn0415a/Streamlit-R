@@ -2,33 +2,31 @@ import os
 import streamlit as st
 import pandas as pd
 
-from src.common.common import page_setup
-
-params = page_setup()
-
 data_dir = "/data"
 
 st.markdown("## Upload CSV File")
 
-uploaded_file = st.file_uploader(
+# Form 생성
+with st.form(key="upload_form"):
+    uploaded_file = st.file_uploader(
         "Upload a CSV file",
         type=["csv"],
         accept_multiple_files=False
-)
+    )
+    submit_button = st.form_submit_button(label="Submit")
 
-submit = st.button("Submit")
+# 폼 제출 시 처리
+if submit_button and uploaded_file is not None:
+    # 파일 저장
+    save_path = os.path.join(data_dir, uploaded_file.name)
+    with open(save_path, "wb") as f:
+        f.write(uploaded_file.getbuffer())
+    st.success(f"File saved to {save_path}")
 
-if submit:
-    if uploaded_file is not None:
-        save_path = os.path.join(data_dir, uploaded_file.name)
-        with open(save_path, "wb") as f:
-            f.write(uploaded_file.getbuffer())
-        st.success(f"File saved to {save_path}")
-
-        try:
-            df = pd.read_csv(save_path)
-            st.dataframe(df)
-        except Exception as e:
-            st.error(f"Error reading CSV: {e}")
-    else:
-        st.error("Please upload a CSV file first.")
+    try:
+        # CSV 읽기
+        df = pd.read_csv(save_path)
+        st.markdown("### Uploaded Table")
+        st.dataframe(df)
+    except Exception as e:
+        st.error(f"Error reading CSV: {str(e)}")

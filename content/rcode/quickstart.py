@@ -7,7 +7,7 @@ page_setup(page="main")
 
 st.markdown(
         """
-        # QuantMS App
+        # User Guide
         ### QuantMS: A bioinformatics best-practice analysis pipeline for Quantitative Mass Spectrometry
         Welcome to the OpenMS QuantMS App, a web application for the QuantMS quantitative proteomics analysis pipeline built using [OpenMS](https://openms.de/) and Nextflow.
         """

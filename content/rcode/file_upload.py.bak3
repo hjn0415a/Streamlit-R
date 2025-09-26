@@ -1,0 +1,79 @@
+import os
+import re
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
+
+from src.common.common import page_setup
+
+params = page_setup()
+data_dir = "/data"
+
+st.markdown("## Upload CSV File")
+
+uploaded_file = st.file_uploader(
+    "Upload a CSV file",
+    type=["csv"],
+    accept_multiple_files=False
+)
+
+if uploaded_file is not None:
+    # 파일 저장
+    save_path = os.path.join(data_dir, uploaded_file.name)
+    with open(save_path, "wb") as f:
+        f.write(uploaded_file.getbuffer())
+    st.success(f"File saved to {save_path}")
+
+    try:
+        df = pd.read_csv(save_path)
+        st.write("### Uploaded Table")
+
+        # 샘플 컬럼만 추출
+        sample_cols = [c for c in df.columns if re.search(r"(_\d+$)|(\d+$)", c)]
+        if "Geneid" not in df.columns:
+            st.error("CSV must contain a 'Geneid' column.")
+        else:
+            gb = GridOptionsBuilder.from_dataframe(df[["Geneid"] + sample_cols])
+            gb.configure_selection(selection_mode="single", use_checkbox=True)
+            grid_options = gb.build()
+
+            # AgGrid 출력
+            grid_response = AgGrid(
+                df[["Geneid"] + sample_cols],
+                gridOptions=grid_options,
+                update_mode=GridUpdateMode.SELECTION_CHANGED,
+                height=400,
+                fit_columns_on_grid_load=True
+            )
+
+            # 선택된 행 가져오기
+            selected_rows = grid_response["selected_rows"]
+            if selected_rows:
+                gene_row = selected_rows[0]
+                gene_name = gene_row.get("Geneid", "Unknown")
+
+                # 그룹 이름 추출
+                group_map = {col: re.sub(r"(_\d+$)|(\d+$)", "", col) for col in sample_cols}
+
+                # tidy dataframe 생성
+                tidy_data = []
+                for col in sample_cols:
+                    tidy_data.append({
+                        "Sample": col,
+                        "Group": group_map[col],
+                        "Expression": gene_row.get(col, None)
+                    })
+                tidy_df = pd.DataFrame(tidy_data)
+
+                # Boxplot
+                fig, ax = plt.subplots()
+                sns.boxplot(x="Group", y="Expression", data=tidy_df, ax=ax)
+                sns.stripplot(x="Group", y="Expression", data=tidy_df,
+                              color="black", alpha=0.6, jitter=True, ax=ax)
+                ax.set_title(f"Expression of {gene_name}")
+                st.pyplot(fig)
+
+    except Exception as e:
+        st.error(f"Error reading CSV: {e}")

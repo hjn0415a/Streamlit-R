@@ -1,0 +1,240 @@
+import os
+import subprocess
+import tempfile
+import shutil
+import streamlit as st
+
+from src.common.common import page_setup
+params = page_setup()
+
+st.title("GSEA Plot")
+
+# ----------------- Main Tabs -----------------
+main_tabs = st.tabs(["📊 GSEA Plot (total)", "📊 GSEA Plot (per term)"])
+total_tab, perterm_tab = main_tabs
+
+# ----------------- 1️⃣ Total GSEA Plot (topN terms) -----------------
+with total_tab:
+
+    # ----------------- Sub Tabs -----------------
+    sub_tabs = st.tabs(["⚙️ Configure", "🚀 Run", "📊 Result", "⬇️ Download"])
+    configure_tab, run_tab, result_tab, download_tab = sub_tabs
+
+    # ----------------- Configure -----------------
+    with configure_tab:
+        # 고정 경로
+        input_dir = "/data/GSEA"  
+        output_dir = "/data/GSEA/gseaplot_total"
+        os.makedirs(output_dir, exist_ok=True)
+
+        topN = st.number_input("Top N terms to plot", value=10, step=1, min_value=1)
+        width = st.number_input("Plot width", value=12.0, step=0.5)
+        height = st.number_input("Plot height", value=8.0, step=0.5)
+
+    # ----------------- Run -----------------
+    with run_tab:
+        if st.button("Run Total gseaplot2 Generation"):
+            with tempfile.NamedTemporaryFile(mode="w", suffix=".R", delete=False, encoding="utf-8") as tmp_r:
+                r_script_path = tmp_r.name
+                tmp_r.write(f"""
+library(clusterProfiler)
+library(enrichplot)
+library(ggplot2)
+
+input_dir  <- "{input_dir}"
+output_dir <- "{output_dir}"
+
+files <- c(BP = "gse_BP.rds",
+           CC = "gse_CC.rds",
+           MF = "gse_MF.rds")
+
+topN <- {topN}
+
+for (ont in names(files)) {{
+  rds_path <- file.path(input_dir, files[ont])
+  if (!file.exists(rds_path)) next
+  
+  gse <- try(readRDS(rds_path), silent = TRUE)
+  if (inherits(gse, "try-error") || !inherits(gse, "gseaResult")) next
+  if (is.null(gse@result) || nrow(gse@result) == 0) next
+  
+  res <- as.data.frame(gse@result)
+  res[] <- lapply(res, function(x) if (inherits(x, "Rle")) as.vector(x) else x)
+  
+  if (!all(c("ID","p.adjust") %in% names(res))) next
+  res$p.adjust <- suppressWarnings(as.numeric(res$p.adjust))
+  ord <- order(res$p.adjust, na.last = NA)
+  if (!length(ord)) next
+  sel <- ord[ seq_len(min(topN, length(ord))) ]
+  ids <- res$ID[sel]
+  
+  p <- gseaplot2(
+    gse,
+    geneSetID    = ids,
+    pvalue_table = TRUE,
+    title        = sprintf("Top %d enriched GO:%s terms", length(ids), ont)
+  )
+  
+  ggsave(
+    filename = file.path(output_dir, sprintf("gseaplot2_%s_top%d.svg", ont, length(ids))),
+    plot     = p,
+    width    = {width},
+    height   = {height}
+  )
+}}
+""")
+
+            result = subprocess.run(
+                ["Rscript", r_script_path],
+                capture_output=True,
+                text=True,
+                encoding="utf-8"
+            )
+            if result.returncode == 0:
+                st.success("Total gseaplot2 generation completed!")
+                if result.stdout:
+                    st.text(result.stdout)
+            else:
+                st.error("R script execution failed.")
+                if result.stderr:
+                    st.text(result.stderr)
+
+    # ----------------- Result -----------------
+    with result_tab:
+        if os.path.exists(output_dir):
+            svgs = [f for f in os.listdir(output_dir) if f.endswith(".svg")]
+            if svgs:
+                st.markdown("### Total gseaplot2 Results")
+                for f in svgs:
+                    st.write(f"**{f}**")
+                    st.image(os.path.join(output_dir, f), use_container_width=True)
+            else:
+                st.info("No SVG plots found.")
+        else:
+            st.info("Output directory does not exist.")
+
+    # ----------------- Download -----------------
+    with download_tab:
+        if os.path.exists(output_dir) and os.listdir(output_dir):
+            with tempfile.TemporaryDirectory() as tmpdir:
+                zip_path = shutil.make_archive(os.path.join(tmpdir, "gseaplot2_total_results"), "zip", output_dir)
+                with open(zip_path, "rb") as f:
+                    st.download_button(
+                        label="Download Total gseaplot2 Results (ZIP)",
+                        data=f,
+                        file_name="gseaplot2_total_results.zip",
+                        mime="application/zip"
+                    )
+        else:
+            st.info("No files to download.")
+
+# ----------------- 2️⃣ Per Term GSEA Plot (top1 term) -----------------
+with perterm_tab:
+
+    # ----------------- Sub Tabs -----------------
+    sub_tabs = st.tabs(["⚙️ Configure", "🚀 Run", "📊 Result", "⬇️ Download"])
+    configure_tab, run_tab, result_tab, download_tab = sub_tabs
+
+    # ----------------- Configure -----------------
+    with configure_tab:
+        input_dir = "/data/GSEA"
+        output_dir = "/data/GSEA/gseaplot_per_term"
+        os.makedirs(output_dir, exist_ok=True)
+
+        width = st.number_input("Plot width", value=8.0, step=0.5, key="perterm_width")
+        height = st.number_input("Plot height", value=12.0, step=0.5, key="perterm_height")
+
+    # ----------------- Run -----------------
+    with run_tab:
+        if st.button("Run Per-Term gseaplot Generation"):
+            with tempfile.NamedTemporaryFile(mode="w", suffix=".R", delete=False, encoding="utf-8") as tmp_r:
+                r_script_path = tmp_r.name
+                tmp_r.write(f"""
+library(clusterProfiler)
+library(enrichplot)
+library(dplyr)
+library(ggplot2)
+library(cowplot)
+
+input_dir  <- "{input_dir}"
+output_dir <- "{output_dir}"
+
+files <- c(BP = "gse_BP.rds",
+           CC = "gse_CC.rds",
+           MF = "gse_MF.rds")
+
+dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+
+for (ont in names(files)) {{
+  rds_path <- file.path(input_dir, files[ont])
+  if (!file.exists(rds_path)) next
+  
+  gse <- try(readRDS(rds_path), silent = TRUE)
+  if (inherits(gse, "try-error") || !inherits(gse, "gseaResult")) next
+  
+  res <- as.data.frame(gse)
+  if (!all(c("ID","Description","p.adjust") %in% colnames(res))) next
+  if (nrow(res) == 0) next
+  
+  top1 <- res |> arrange(p.adjust) |> slice(1)
+  term_id   <- top1$ID[1]
+  term_desc <- top1$Description[1]
+  
+  p1 <- gseaplot(gse, geneSetID = term_id, by = "runningScore", title = term_desc)
+  p2 <- gseaplot(gse, geneSetID = term_id, by = "preranked",   title = term_desc)
+  p3 <- gseaplot(gse, geneSetID = term_id,                     title = term_desc)
+  
+  combined <- cowplot::plot_grid(p1, p2, p3, ncol = 1, labels = LETTERS[1:3])
+  
+  ggsave(
+    filename = file.path(output_dir, sprintf("gseaplot_modes_%s_top1.svg", ont)),
+    plot     = combined,
+    width    = {width},
+    height   = {height}
+  )
+}}
+""")
+
+            result = subprocess.run(
+                ["Rscript", r_script_path],
+                capture_output=True,
+                text=True,
+                encoding="utf-8"
+            )
+            if result.returncode == 0:
+                st.success("Per-term gseaplot generation completed!")
+                if result.stdout:
+                    st.text(result.stdout)
+            else:
+                st.error("R script execution failed.")
+                if result.stderr:
+                    st.text(result.stderr)
+
+    # ----------------- Result -----------------
+    with result_tab:
+        if os.path.exists(output_dir):
+            svgs = [f for f in os.listdir(output_dir) if f.endswith(".svg")]
+            if svgs:
+                st.markdown("### Per-Term gseaplot Results")
+                for f in svgs:
+                    st.write(f"**{f}**")
+                    st.image(os.path.join(output_dir, f), use_container_width=True)
+            else:
+                st.info("No SVG plots found.")
+        else:
+            st.info("Output directory does not exist.")
+
+    # ----------------- Download -----------------
+    with download_tab:
+        if os.path.exists(output_dir) and os.listdir(output_dir):
+            with tempfile.TemporaryDirectory() as tmpdir:
+                zip_path = shutil.make_archive(os.path.join(tmpdir, "gseaplot_per_term_results"), "zip", output_dir)
+                with open(zip_path, "rb") as f:
+                    st.download_button(
+                        label="Download Per-Term gseaplot Results (ZIP)",
+                        data=f,
+                        file_name="gseaplot_per_term_results.zip",
+                        mime="application/zip"
+                    )
+        else:
+            st.info("No files to download.")

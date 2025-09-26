@@ -1,0 +1,133 @@
+import os
+import subprocess
+import tempfile
+import shutil
+import streamlit as st
+import pandas as pd
+
+from src.common.common import page_setup
+params = page_setup()
+
+st.title("DEG Analysis")
+
+# ----------------- DEG Filtering -----------------
+main_tabs = st.tabs(["🧬 DEG Filtering"])
+deg_tab = main_tabs[0]
+
+with deg_tab:
+    sub_tabs = st.tabs(["⚙️ Configure", "🚀 Run", "📊 Result", "⬇️ Download"])
+    configure_tab, run_tab, result_tab, download_tab = sub_tabs
+
+    # ----------------- Configure -----------------
+    with configure_tab:
+        csv_path = "/data/example_data.csv"
+        fc_input = st.text_input("FC thresholds (comma-separated)", "1.5,2")
+        pval_input = st.text_input("P-value thresholds (comma-separated)", "0.05,0.01")
+
+    # 결과 폴더
+    result_dir = os.path.join(os.path.dirname(csv_path), "Deg")
+    os.makedirs(result_dir, exist_ok=True)
+
+    # ----------------- Run -----------------
+    with run_tab:
+        if st.button("Run DEG Filtering"):
+            try:
+                fc_thresholds = [float(x.strip()) for x in fc_input.split(",") if x.strip()]
+                pval_thresholds = [float(x.strip()) for x in pval_input.split(",") if x.strip()]
+            except ValueError:
+                st.error("숫자만 입력해주세요 (예: 1.5,2,3)")
+                st.stop()
+
+            with tempfile.NamedTemporaryFile(mode="w", suffix=".R", delete=False, encoding="utf-8") as tmp_r:
+                r_script_path = tmp_r.name
+                tmp_r.write(f"""
+save_filtered_results <- function(csv_path, fc_thresholds, pval_thresholds, result_dir) {{
+  gene_data <- read.csv(csv_path, stringsAsFactors = FALSE)
+  if (!dir.exists(result_dir)) dir.create(result_dir, recursive = TRUE)
+
+  combo_names <- character()
+
+  for (fc_cut in fc_thresholds) {{
+    for (p_cut in pval_thresholds) {{
+      subset_genes <- gene_data[abs(gene_data$foldchange) >= fc_cut & 
+                                gene_data$pvalue <= p_cut, , drop = FALSE]
+
+      combo_name <- paste0("FC", fc_cut, "_p", p_cut)
+      combo_dir  <- file.path(result_dir, combo_name)
+      if (!dir.exists(combo_dir)) dir.create(combo_dir, recursive = TRUE)
+
+      combo_names <- c(combo_names, combo_name)
+
+      write.csv(subset_genes,
+                file = file.path(combo_dir, "filtered_gene_list.csv"),
+                row.names = FALSE)
+
+      message(sprintf("저장 완료: FC >= %.2f, pvalue <= %.3f (%d genes)",
+                      fc_cut, p_cut, nrow(subset_genes)))
+    }}
+  }}
+
+  saveRDS(combo_names, file.path(result_dir, "combo_names.rds"))
+  write.csv(data.frame(combo = combo_names),
+            file = file.path(result_dir, "combo_names.csv"), row.names = FALSE)
+
+  invisible(combo_names)
+}}
+
+csv_path <- "{csv_path}"
+fc_thresholds <- c({", ".join(map(str, fc_thresholds))})
+pval_thresholds <- c({", ".join(map(str, pval_thresholds))})
+result_dir <- "{result_dir}"
+
+combo_names <- save_filtered_results(csv_path, fc_thresholds, pval_thresholds, result_dir)
+""")
+
+            result = subprocess.run(
+                ["Rscript", r_script_path],
+                capture_output=True,
+                text=True,
+                encoding="utf-8"
+            )
+            if result.returncode == 0:
+                st.success("DEG filtering completed!")
+                st.text(result.stdout)
+            else:
+                st.error("R script execution failed.")
+                st.text(result.stderr)
+
+    # ----------------- Result -----------------
+    with result_tab:
+        if os.path.exists(result_dir):
+            st.markdown("### Filtered Results by Combination")
+            combo_csv = os.path.join(result_dir, "combo_names.csv")
+            if os.path.exists(combo_csv):
+                combos = pd.read_csv(combo_csv)["combo"].tolist()
+                for combo in combos:
+                    file_path = os.path.join(result_dir, combo, "filtered_gene_list.csv")
+                    if os.path.exists(file_path):
+                        df = pd.read_csv(file_path)
+                        st.markdown(f"**{combo}** (Genes: {len(df)})")
+                        st.dataframe(df, use_container_width=True)
+
+    # ----------------- Download -----------------
+    with download_tab:
+        combo_csv = os.path.join(result_dir, "combo_names.csv")
+        if os.path.exists(combo_csv):
+            combos = pd.read_csv(combo_csv)["combo"].tolist()
+            if combos:
+                # 임시 폴더에 조합별 폴더만 복사
+                with tempfile.TemporaryDirectory() as tmpdir:
+                    for combo in combos:
+                        src = os.path.join(result_dir, combo)
+                        dst = os.path.join(tmpdir, combo)
+                        if os.path.exists(src):
+                            shutil.copytree(src, dst)
+                    # 임시 폴더를 ZIP으로 압축
+                    zip_path = shutil.make_archive(os.path.join(tmpdir, "Deg_combos"), "zip", tmpdir)
+                    with open(zip_path, "rb") as f:
+                        st.download_button(
+                            label="Download Selected Combo Results (ZIP)",
+                            data=f,
+                            file_name="Deg_combos.zip",
+                            mime="application/zip"
+                        )

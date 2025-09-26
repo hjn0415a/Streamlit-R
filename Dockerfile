@@ -15,8 +15,8 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 # Install R packages via Bioconductor
 RUN Rscript -e "if(!requireNamespace('BiocManager', quietly=TRUE)) install.packages('BiocManager', repos='https://cran.r-project.org')" && \
-    Rscript -e "BiocManager::install(c('EnhancedVolcano', 'clusterProfiler', 'org.Mm.eg.db', 'org.Hs.eg.db', 'enrichplot', 'pheatmap'), update=TRUE, ask=FALSE, dependencies=TRUE)" && \
-    Rscript -e "install.packages(c('svglite', 'ggplot2', 'readxl', 'factoextra', 'ggrepel', 'readr'), repos='https://cran.r-project.org')"
+    Rscript -e "BiocManager::install(c('EnhancedVolcano', 'clusterProfiler', 'org.Mm.eg.db', 'org.Hs.eg.db', 'enrichplot', 'pheatmap', 'limma', 'pathview', 'RCy3'), update=TRUE, ask=FALSE, dependencies=TRUE)" && \
+    Rscript -e "install.packages(c('svglite', 'ggplot2', 'readxl', 'factoextra', 'ggrepel', 'readr', 'cowplot', 'dplyr'), repos='https://cran.r-project.org')"
 
 # Install Python dependencies
 COPY requirements.txt .

@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='648.00pt' height='504.00pt' viewBox='0 0 648.00 504.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: none;'/>
+<defs>
+  <clipPath id='cpMC4wMHw2NDguMDB8MC4wMHw1MDQuMDA='>
+    <rect x='0.00' y='0.00' width='648.00' height='504.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw1MDQuMDA=)'>
+</g>
+<defs>
+  <clipPath id='cpNjIuMTJ8NTg1Ljg4fDAuMDB8NTA0LjAw'>
+    <rect x='62.12' y='0.00' width='523.76' height='504.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjIuMTJ8NTg1Ljg4fDAuMDB8NTA0LjAw)'>
+<rect x='62.12' y='0.00' width='523.76' height='504.00' style='stroke-width: 0.00; stroke: none;' />
+</g>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw1MDQuMDA=)'>
+</g>
+<defs>
+  <clipPath id='cpNTkuMjR8NTQwLjMzfDAuMDB8NTA0LjAw'>
+    <rect x='59.24' y='0.00' width='481.09' height='504.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTkuMjR8NTQwLjMzfDAuMDB8NTA0LjAw)'>
+<line x1='247.03' y1='23.04' x2='413.34' y2='110.47' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='247.03' y1='23.04' x2='279.77' y2='172.56' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='247.03' y1='23.04' x2='81.11' y2='182.42' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='247.03' y1='23.04' x2='413.34' y2='110.47' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='413.34' y1='110.47' x2='279.77' y2='172.56' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='413.34' y1='110.47' x2='81.11' y2='182.42' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='247.03' y1='23.04' x2='279.77' y2='172.56' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='413.34' y1='110.47' x2='279.77' y2='172.56' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='279.77' y1='172.56' x2='81.11' y2='182.42' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='247.03' y1='23.04' x2='81.11' y2='182.42' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='413.34' y1='110.47' x2='81.11' y2='182.42' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<line x1='279.77' y1='172.56' x2='81.11' y2='182.42' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-linecap: butt;' />
+<circle cx='518.46' cy='338.96' r='7.18' style='stroke-width: 0.71; stroke: #CA6D74; fill: #CA6D74;' />
+<circle cx='101.77' cy='421.94' r='3.56' style='stroke-width: 0.71; stroke: #CA6D74; fill: #CA6D74;' />
+<circle cx='247.03' cy='23.04' r='6.51' style='stroke-width: 0.71; stroke: #CA6D74; fill: #CA6D74;' />
+<circle cx='413.34' cy='110.47' r='7.18' style='stroke-width: 0.71; stroke: #CA6D74; fill: #CA6D74;' />
+<circle cx='279.77' cy='172.56' r='3.56' style='stroke-width: 0.71; stroke: #8479A0; fill: #8479A0;' />
+<circle cx='81.11' cy='182.42' r='6.12' style='stroke-width: 0.71; stroke: #327EBA; fill: #327EBA;' />
+<circle cx='327.85' cy='483.84' r='8.89' style='stroke-width: 0.71; stroke: #E06663; fill: #E06663;' />
+<text x='433.72' y='342.67' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='433.54' y='342.41' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='433.28' y='342.24' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.97' y='342.18' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.67' y='342.24' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.40' y='342.41' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.23' y='342.67' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.17' y='342.98' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.23' y='343.29' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.40' y='343.55' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.67' y='343.72' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.97' y='343.79' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='433.28' y='343.72' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='433.54' y='343.55' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='433.72' y='343.29' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='433.78' y='342.98' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='432.97' y='342.98' text-anchor='middle' style='font-size: 11.04px; font-family: "Nimbus Sans";' textLength='162.42px' lengthAdjust='spacingAndGlyphs'>structural constituent of ribosome</text>
+<text x='192.68' y='425.66' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='192.51' y='425.40' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='192.25' y='425.22' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.94' y='425.16' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.63' y='425.22' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.37' y='425.40' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.20' y='425.66' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.14' y='425.96' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.20' y='426.27' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.37' y='426.53' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.63' y='426.71' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.94' y='426.77' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='192.25' y='426.71' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='192.51' y='426.53' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='192.68' y='426.27' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='192.75' y='425.96' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='191.94' y='425.96' text-anchor='middle' style='font-size: 11.04px; font-family: "Nimbus Sans";' textLength='171.78px' lengthAdjust='spacingAndGlyphs'>translation elongation factor activity</text>
+<text x='256.03' y='17.98' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='255.86' y='17.72' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='255.59' y='17.55' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='255.29' y='17.49' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='254.98' y='17.55' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='254.72' y='17.72' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='254.54' y='17.98' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='254.48' y='18.29' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='254.54' y='18.60' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='254.72' y='18.86' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='254.98' y='19.03' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='255.29' y='19.09' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='255.59' y='19.03' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='255.86' y='18.86' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='256.03' y='18.60' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='256.09' y='18.29' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='255.29' y='18.29' text-anchor='middle' style='font-size: 11.04px; font-family: "Nimbus Sans";' textLength='116.30px' lengthAdjust='spacingAndGlyphs'>electron transfer activity</text>
+<text x='405.66' y='123.08' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='405.48' y='122.82' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='405.22' y='122.65' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.91' y='122.58' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.61' y='122.65' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.34' y='122.82' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.17' y='123.08' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.11' y='123.39' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.17' y='123.70' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.34' y='123.96' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.61' y='124.13' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.91' y='124.19' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='405.22' y='124.13' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='405.48' y='123.96' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='405.66' y='123.70' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='405.72' y='123.39' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='404.91' y='123.39' text-anchor='middle' style='font-size: 11.04px; font-family: "Nimbus Sans";' textLength='204.62px' lengthAdjust='spacingAndGlyphs'>proton transmembrane transporter activity</text>
+<text x='288.89' y='167.54' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='288.71' y='167.27' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='288.45' y='167.10' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='288.15' y='167.04' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='287.84' y='167.10' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='287.58' y='167.27' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='287.40' y='167.54' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='287.34' y='167.84' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='287.40' y='168.15' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='287.58' y='168.41' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='287.84' y='168.59' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='288.15' y='168.65' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='288.45' y='168.59' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='288.71' y='168.41' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='288.89' y='168.15' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='288.95' y='167.84' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='288.15' y='167.84' text-anchor='middle' style='font-size: 11.04px; font-family: "Nimbus Sans";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>2 iron, 2 sulfur cluster binding</text>
+<text x='227.00' y='187.15' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='226.82' y='186.88' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='226.56' y='186.71' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='226.26' y='186.65' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='225.95' y='186.71' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='225.69' y='186.88' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='225.51' y='187.15' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='225.45' y='187.45' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='225.51' y='187.76' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='225.69' y='188.02' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='225.95' y='188.20' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='226.26' y='188.26' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='226.56' y='188.20' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='226.82' y='188.02' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='227.00' y='187.76' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='227.06' y='187.45' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='226.26' y='187.45' text-anchor='middle' style='font-size: 11.04px; font-family: "Nimbus Sans";' textLength='282.95px' lengthAdjust='spacingAndGlyphs'>active monoatomic ion transmembrane transporter activity</text>
+<text x='337.05' y='478.62' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='336.87' y='478.36' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='336.61' y='478.18' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='336.30' y='478.12' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='336.00' y='478.18' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='335.74' y='478.36' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='335.56' y='478.62' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='335.50' y='478.93' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='335.56' y='479.23' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='335.74' y='479.49' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='336.00' y='479.67' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='336.30' y='479.73' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='336.61' y='479.67' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='336.87' y='479.49' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='337.05' y='479.23' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='337.11' y='478.93' text-anchor='middle' style='font-size: 11.04px;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+<text x='336.30' y='478.93' text-anchor='middle' style='font-size: 11.04px; font-family: "Nimbus Sans";' textLength='81.11px' lengthAdjust='spacingAndGlyphs'>cadherin binding</text>
+</g>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw1MDQuMDA=)'>
+<text x='546.00' y='161.81' style='font-size: 11.00px; font-family: "Nimbus Sans";' textLength='19.17px' lengthAdjust='spacingAndGlyphs'>size</text>
+<circle cx='557.06' cy='177.13' r='3.56' style='stroke-width: 0.71; fill: #000000;' />
+<circle cx='557.06' cy='194.41' r='6.51' style='stroke-width: 0.71; fill: #000000;' />
+<circle cx='557.06' cy='212.86' r='7.74' style='stroke-width: 0.71; fill: #000000;' />
+<circle cx='557.06' cy='233.73' r='8.68' style='stroke-width: 0.71; fill: #000000;' />
+<text x='573.60' y='180.34' style='font-size: 8.80px; font-family: "Nimbus Sans";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='573.60' y='197.62' style='font-size: 8.80px; font-family: "Nimbus Sans";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>8</text>
+<text x='573.60' y='216.07' style='font-size: 8.80px; font-family: "Nimbus Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>12</text>
+<text x='573.60' y='236.94' style='font-size: 8.80px; font-family: "Nimbus Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>16</text>
+<text x='546.00' y='261.21' style='font-size: 11.00px; font-family: "Nimbus Sans";' textLength='38.48px' lengthAdjust='spacingAndGlyphs'>p.adjust</text>
+<image width='17.28' height='86.40' x='546.00' y='267.89' preserveAspectRatio='none' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAEsCAYAAAACUNnVAAAArklEQVQ4jZVSSxYDMQgiHqkH7MF6ObqYZj4GNN1FHwIS8Xp/GAEgBojj9SuBCPB8TchR8lEqyBDlBuQqASCGEFrK2UMJgWABna7s8clXQRIzSqdwTm+kfFhD9mLc+wlWEL2bgVyrQuguGqUuS6FyX+SY5kTjPlnjnpCHcO3t6J5JNhDF4pcuWeQJ9HZzQr2uiKT5HjlhsrdHYy8nXWxjjUY3E7DX/T8ScY5FYHeWL1yHc/9dbFo+AAAAAElFTkSuQmCC'/>
+<polyline points='559.82,333.57 563.28,333.57 ' style='stroke-width: 0.38; stroke: #FFFFFF;' />
+<polyline points='559.82,312.35 563.28,312.35 ' style='stroke-width: 0.38; stroke: #FFFFFF;' />
+<polyline points='559.82,291.14 563.28,291.14 ' style='stroke-width: 0.38; stroke: #FFFFFF;' />
+<polyline points='559.82,269.92 563.28,269.92 ' style='stroke-width: 0.38; stroke: #FFFFFF;' />
+<polyline points='549.45,333.57 546.00,333.57 ' style='stroke-width: 0.38; stroke: #FFFFFF;' />
+<polyline points='549.45,312.35 546.00,312.35 ' style='stroke-width: 0.38; stroke: #FFFFFF;' />
+<polyline points='549.45,291.14 546.00,291.14 ' style='stroke-width: 0.38; stroke: #FFFFFF;' />
+<polyline points='549.45,269.92 546.00,269.92 ' style='stroke-width: 0.38; stroke: #FFFFFF;' />
+<text x='568.76' y='336.78' style='font-size: 8.80px; font-family: "Nimbus Sans";' textLength='17.12px' lengthAdjust='spacingAndGlyphs'>0.01</text>
+<text x='568.76' y='315.56' style='font-size: 8.80px; font-family: "Nimbus Sans";' textLength='17.12px' lengthAdjust='spacingAndGlyphs'>0.02</text>
+<text x='568.76' y='294.34' style='font-size: 8.80px; font-family: "Nimbus Sans";' textLength='17.12px' lengthAdjust='spacingAndGlyphs'>0.03</text>
+<text x='568.76' y='273.13' style='font-size: 8.80px; font-family: "Nimbus Sans";' textLength='17.12px' lengthAdjust='spacingAndGlyphs'>0.04</text>
+</g>
+</g>
+</svg>
