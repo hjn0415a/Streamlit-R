@@ -109,7 +109,7 @@ for (ont in names(files)) {{
                     if svgs:
                         for f in svgs:
                             st.write(f"**{f}**")
-                            st.image(os.path.join(output_dir, f), use_container_width=True)
+                            st.image(os.path.join(output_dir, f), width=850)
                     else:
                         st.info(f"No SVG plots found for {ont}.")
         else:
@@ -232,7 +232,7 @@ plot_gsea_term("{ont}", {idx}, input_dir, output_dir)
             if images:
                 for img_file in images:
                     st.markdown(f"**{img_file}**")
-                    st.image(os.path.join(output_dir, img_file), use_container_width=True)
+                    st.image(os.path.join(output_dir, img_file), width=1000)
             else:
                 st.info("아직 생성된 플롯이 없습니다.")
         else:

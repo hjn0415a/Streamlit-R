@@ -177,10 +177,10 @@ run_enrich_genedi_min(
                                 
                                     # 이미지 먼저 출력
                                     if os.path.exists(plot_file):
-                                        st.image(plot_file, use_container_width=True)
+                                        st.image(plot_file, width=750)
                                 
                                     # 테이블 출력
-                                    st.dataframe(df, use_container_width=True, height=250)
+                                    st.dataframe(df, width=750, height=250)
                                 else:
                                     st.markdown(f"**{combo}** - No results for {ont}")
 

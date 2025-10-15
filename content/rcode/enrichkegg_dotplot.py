@@ -132,7 +132,7 @@ plot_enrichkegg_dotplots(
                             st.markdown(f"**{combo}**")
                             plot_file = os.path.join(enrich_root, combo, "figure", "Enrichkegg_dotplot.svg")
                             if os.path.exists(plot_file):
-                                st.image(plot_file, use_container_width=True)
+                                st.image(plot_file, width=750)
                             else:
                                 st.info(f"No dotplot found for {combo}")
             else:

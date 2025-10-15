@@ -166,7 +166,7 @@ make_emap_from_rds_by_combo(
                                         st.markdown(f"**{combo}**")  # FC/P-value 조합 표시
                                         plot_file = os.path.join(figure_root, combo, f"emap_{ont}.svg")
                                         if os.path.exists(plot_file):
-                                            st.image(plot_file, use_container_width=True)
+                                            st.image(plot_file, width=900)
                                         else:
                                             st.info(f"No {ont} plot found for {combo}")
                 else:

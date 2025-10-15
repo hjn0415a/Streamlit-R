@@ -149,7 +149,7 @@ for (ont in names(files)) {{
                             for col, svg_file in zip(cols, svg_pair):
                                 with col:
                                     st.markdown(f"**{svg_file}**")
-                                    st.image(os.path.join(output_dir, svg_file), use_container_width=True)
+                                    st.image(os.path.join(output_dir, svg_file), width=950)
                     else:
                         st.info(f"No {ont} heatplots found.")
         else:

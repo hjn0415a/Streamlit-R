@@ -62,7 +62,7 @@ ggsave(filename='{output_svg_volcano}', plot=volcano_plot, width=8, height=6, dp
     # Result
     with result_tab:
         if os.path.exists(output_svg_volcano):
-            st.image(output_svg_volcano, caption="Volcano Plot", use_container_width=True)
+            st.image(output_svg_volcano, caption="Volcano Plot", width=700)
 
     # Download
     with download_tab:
@@ -118,7 +118,7 @@ dev.off()
     # Result
     with result_tab:
         if os.path.exists(output_svg_enhanced):
-            st.image(output_svg_enhanced, caption="EnhancedVolcano Plot", use_container_width=True)
+            st.image(output_svg_enhanced, caption="EnhancedVolcano Plot", width=700)
 
     # Download
     with download_tab:

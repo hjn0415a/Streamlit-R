@@ -162,7 +162,7 @@ pathview(
                     st.markdown(f"**{selected_combo}**")
                     for img_file in images:
                         img_path = os.path.join(combo_path, img_file)
-                        st.image(img_path, use_container_width=True)
+                        st.image(img_path, width=950)
                 else:
                     st.info(f"No Pathview images found for {selected_combo}.")
             else:

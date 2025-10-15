@@ -97,7 +97,7 @@ dev.off()
     # ----------------- Result -----------------
     with result_tab:
         if os.path.exists(output_svg_pca):
-            st.image(output_svg_pca, caption="PCA Plot", use_container_width=True)
+            st.image(output_svg_pca, caption="PCA Plot", width=700)
 
     # ----------------- Download -----------------
     with download_tab:

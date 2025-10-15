@@ -139,7 +139,7 @@ for (ont in c("BP","CC","MF")) {{
                             for col, svg_file in zip(cols, svg_pair):
                                 with col:
                                     st.markdown(f"**{svg_file}**")
-                                    st.image(os.path.join(output_dir, svg_file), use_container_width=True)
+                                    st.image(os.path.join(output_dir, svg_file), width=800)
                     else:
                         st.info(f"No {ont} ridgeplots found.")
         else:
